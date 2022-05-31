@@ -1,12 +1,5 @@
 (ns hello
-  (:require [java-time :as t]))
-
-(defn time-str
-  "Returns a string representation of a datetime in the local time zone."
-  [instant]
-  (t/format
-    (t/with-zone (t/formatter "hh:mm a") (t/zone-id))
-    instant))
+  (:require [hello-time :as ht]))
 
 (defn run [opts]
-  (println "Hello world, the time is" (time-str (t/instant))))
+  (println "Hello world, the time is" (ht/time-str (ht/now))))

@@ -1,0 +1,3 @@
+{:deps
+ {clojure.java-time/clojure.java-time {:git/url "https://github.com/dm3/clojure.java-time"
+                                       :git/sha "693dffad2343cd9722482a5f200efe75dfbfbd31"}}}
