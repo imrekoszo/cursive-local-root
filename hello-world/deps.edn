@@ -1,2 +1,7 @@
-{:deps
- {time-lib/time-lib {:local/root "../time-lib"}}}
+{:paths ["src"]
+ :deps
+ {cursive-local-root/time-lib
+  {:local/root "../time-lib"}
+
+  cursive-local-root/string-lib
+  {:local/root "../string-lib"}}}

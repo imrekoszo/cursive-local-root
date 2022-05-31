@@ -1,5 +1,6 @@
 (ns hello
-  (:require [hello-time :as ht]))
+  (:require [hello-time :as ht]
+            [strs]))
 
 (defn run [opts]
-  (println "Hello world, the time is" (ht/time-str (ht/now))))
+  (println strs/hello-prefix (ht/time-str (ht/now))))
